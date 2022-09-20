@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <ul class="navigation"></ul>
+        <li> <a href="#" >Home</a></a></li>
+        <li> <a href="#" >Tv shows</a></a></li>
+        <li> <a href="https://a5c7-117-195-55-139.in.ngrok.io/dbz/" >Movies</a></a></li>
+        <li> <a href="https://a5c7-117-195-55-139.in.ngrok.io/latest/" >Latest</a></a></li>
+        <li> <a href="https://a5c7-117-195-55-139.in.ngrok.io" >My List</a></a></li>
+<div class="Search">
+    <input type="text" placeholder="Search"
+    id="Search">
+    <i>
+        <i class="fa fa-search" aria-hidden="true"></i>        
+
+</i>
+</div>
+
+
+    </header>
+    <div class="banner"></div>
+    <video autoplay muted loop id="myVideo" >
+        <source src="02.mp4" type="video/mp4">
+      </video>
+    <div class="content">
+        
+        <h4> 
+            <span>2021</span>
+            <span class="bg_10" id="bg_10"><i>+12</i></span>
+            <span class="bg_10" id="bg_10">1h 43 min</span>
+            <span>Action, thirll</span>
+            <span>2021   </span>
+
+        </h4>
+        <p>The anime also features characters, situations and back-stories not present in the original manga. The other names the production was considering for this second series before they settled on Dragon Ball Z were Dragon Ball: Gohan's Big Adventure, New Dragon Ball, Dragon Ball 2, Dragon Ball Wonder Boy, and Dragon Ball 90.</p>
+        <div class="button">
+            <a href="/index.html"><i class="fa fa-play" aria-hidden="true"></i>Play</a></a></a></a>
+            <a href="https://a5c7-117-195-55-139.in.ngrok.io/dbz/"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+        </div>
+        <div class="Play">
+            <a onclick="toggleVideo()"><img src="OIP..png" >Watch Trailer</a>
+        </div>
+        <div class="trailer">
+            <img src="close.png" class="close" onclick="toggleVideo()" >
+            <video src="Goku Whatsapp Status __ Dragon Ball Z __ Dragon Ball Super __ kaamehameha.mp4" controls="true"  ></video> 
+        </div>
+        <script>
+           function toggleVideo(){
+               const trailer = document.querySelector('.trailer');
+               const video = document.querySelector('video');
+               trailer.classList.toggle('active')
+               video.currentTime = 0;
+               video.pause();
+
+            }                      
+                    
+
+
+            </script>
+
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
